@@ -6,13 +6,13 @@
 
 ### Function
 
-    When motd is text only, more characters are allowed to display.
+When motd is text only, more characters are allowed to display.
 
 ### Description
 
-    By default, motd can only display 2048 characters.
-    This plugin allows you to change the maximum number of motd characters.
-    You can change the maximum number of characters for Motd by modifying the convar - 'sm_big_motd_size' provided by the plugin
+By default, motd can only display 2048 characters.
+This plugin allows you to change the maximum number of motd characters.
+You can change the maximum number of characters for Motd by modifying the convar - 'sm_big_motd_size' provided by the plugin.
 
 ![image](./img/Img_231016_211008.png)
 
