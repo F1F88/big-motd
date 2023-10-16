@@ -14,6 +14,8 @@
     This plugin allows you to change the maximum number of motd characters.
     You can change the maximum number of characters for Motd by modifying the convar - 'sm_big_motd_size' provided by the plugin
 
+![image](./img/Img_231016_211008.png)
+
 Note: I only tested the usability on NMRIH games, but other games should work as well
 
 ## Requirements
