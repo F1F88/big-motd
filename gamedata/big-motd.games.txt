@@ -1,0 +1,115 @@
+"Games"
+{
+	// "#default"
+	"nmrih"
+	{
+		"Addresses"
+		{
+			"CServerGameDLL::LoadSpecificMOTDMsg"
+			{
+				"linux"
+				{
+					"signature"		"CServerGameDLL::LoadSpecificMOTDMsg"
+					"offset"		"535"
+				}
+				"windows"
+				{
+					"signature"		"CServerGameDLL::LoadSpecificMOTDMsg"
+					"offset"		"438"
+				}
+			}
+
+			"CVmotdfile"
+			{
+				"linux"
+				{
+					"signature"		"motdfile"
+				}
+				"windows"
+				{
+					"signature"		"CServerGameDLL::LevelInit"
+					"read"			"329"
+				}
+			}
+
+			"CVmotdfile_text"
+			{
+				"linux"
+				{
+					"signature"		"motdfile_text"
+				}
+				"windows"
+				{
+					"signature"		"CServerGameDLL::LevelInit"
+					"read"			"346"
+				}
+			}
+
+			"g_ServerGameDLL"
+			{
+				"linux"
+				{
+					"signature"		"g_ServerGameDLL"
+				}
+				"windows"
+				{
+					"signature"		"EndRestoreEntities"
+					"read"			"226"
+				}
+			}
+		}
+
+		"Signatures"
+		{
+			// CServerGameDLL::LoadSpecificMOTDMsg(ConVar const&, char const*)
+			// String -> "Set %s from file '%s'.  ('%s' was not found.)\n"
+			"CServerGameDLL::LoadSpecificMOTDMsg"
+			{
+				"library"		"server"
+				"linux"			"@_ZN14CServerGameDLL19LoadSpecificMOTDMsgERK6ConVarPKc"
+				"windows"		"\x55\x8B\xEC\x81\xEC\x38\x02\x00\x00\x8D\x4D\xD0"
+			}
+
+			/* Used to find ConVar-motdfile on Linux */
+			// String -> "The MOTD file to load."
+			"motdfile"
+			{
+				"library"		"server"
+				"linux"			"@_ZL8motdfile"
+			}
+
+			/* Used to find ConVar-motdfile_text on Linux */
+			// String -> "The text-only MOTD file to use for clients that have disabled HTML MOTDs."
+			"motdfile_text"
+			{
+				"library"		"server"
+				"linux"			"@_ZL13motdfile_text"
+			}
+
+			/* Used to find ConVar-motdfile and ConVar-motdfile_text on Windows */
+			// String -> "motd" | "motd_text" | "sv_dedicated"
+			// ! This name ("CServerGameDLL::LevelInit") is speculative and may not be correct, but it has no effect on plugin functionality
+			"CServerGameDLL::LevelInit"
+			{
+				"library"		"server"
+				"windows"		"\x55\x8B\xEC\x83\xEC\x18\x53\x8B\xD9\x8B\x0D\x2A\x2A\x2A\x2A"
+			}
+
+			/* Used to find g_ServerGameDLL on Linux */
+			"g_ServerGameDLL"
+			{
+				"library"		"server"
+				"linux"			"@g_ServerGameDLL"
+			}
+
+			/* Used to find g_ServerGameDLL on Windows */
+			// Reference -> CServerGameClients::ClientActive
+			// String -> "player_active" | "userid"
+			"EndRestoreEntities"
+			{
+				"library"		"server"
+				"windows"		"\x80\x3D\x2A\x2A\x2A\x2A\x00\x0F\x84\x2A\x2A\x2A\x2A\x53"
+			}
+		}
+	}
+}
