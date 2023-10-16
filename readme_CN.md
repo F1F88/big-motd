@@ -1,6 +1,6 @@
 # 更大的 MOTD
 
-**文档 :**  [English](./readme.md) | [中文](./readme-chi.md)
+**文档 :**  [English](./readme.md) | [中文](./readme_CN.md)
 
 **本项目同时托管在 :**  [GitHub](https://github.com/f1f88/big-motd) | [Gitee](https://gitee.com/f1f88/big-motd)
 

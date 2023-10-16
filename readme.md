@@ -1,6 +1,6 @@
 # Big MOTD
 
-**Document :**  [English](./readme.md) | [中文](./readme-chi.md)
+**Document :**  [English](./readme.md) | [中文](./readme_CN.md)
 
 **This project is also hosted at :**  [GitHub](https://github.com/f1f88/big-motd) | [Gitee](https://gitee.com/f1f88/big-motd)
 
