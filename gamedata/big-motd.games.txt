@@ -5,7 +5,7 @@
 	{
 		"Addresses"
 		{
-			"CServerGameDLL::LoadSpecificMOTDMsg"
+			"pAddressMotdSize"
 			{
 				"linux"
 				{

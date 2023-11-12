@@ -7,7 +7,7 @@
 
 #define PLUGIN_NAME                         "big-motd"
 #define PLUGIN_DESCRIPTION                  "When motd is text only, more characters are allowed to display"
-#define PLUGIN_VERSION                      "v1.0.0"
+#define PLUGIN_VERSION                      "v1.0.1"
 
 
 public Plugin myinfo =
@@ -61,7 +61,7 @@ void LoadGameData()
     if( ! gamedata )
         SetFailState("Failed to load gamedata. ");
 
-    g_pAddressMotdSize          = GameConfGetAddressOrFail(gamedata, "CServerGameDLL::LoadSpecificMOTDMsg");
+    g_pAddressMotdSize          = GameConfGetAddressOrFail(gamedata, "pAddressMotdSize");
 
     g_pAddressCVmotdfile        = GameConfGetAddressOrFail(gamedata, "CVmotdfile");
     g_pAddressCVmotdfile_text   = GameConfGetAddressOrFail(gamedata, "CVmotdfile_text");
