@@ -1,6 +1,4 @@
-[English](./readme.md) | [中文](./readme_CN.md)
-
-[GitHub](https://github.com/f1f88/big-motd) | [Gitee](https://gitee.com/f1f88/big-motd)
+[English](./readme.md) | [中文](./readme_CN.md)  -  [GitHub](https://github.com/f1f88/big-motd) | [Gitee](https://gitee.com/f1f88/big-motd)
 
 # Big MOTD
 

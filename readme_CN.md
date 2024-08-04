@@ -1,10 +1,8 @@
-[English](./readme.md) | [中文](./readme_CN.md)
-
-[GitHub](https://github.com/f1f88/big-motd) | [Gitee](https://gitee.com/f1f88/big-motd)
+[English](./readme.md) | [中文](./readme_CN.md)  -  [GitHub](https://github.com/f1f88/big-motd) | [Gitee](https://gitee.com/f1f88/big-motd)
 
 # 超大 MOTD
 
-破解 MOTD 大小限制。（默认情况下，MOTD 超过 2048 个字符就不会加载）
+破解 MOTD 大小限制（默认情况下，MOTD 超过 2048 个字符就不会加载）
 
 ![image](./img/Img_231016_211008.png)
 
