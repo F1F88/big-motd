@@ -6,7 +6,7 @@
 
 #define PLUGIN_NAME                         "big-motd"
 #define PLUGIN_DESCRIPTION                  "Crack the MOTD size limit"
-#define PLUGIN_VERSION                      "v2.0.0"
+#define PLUGIN_VERSION                      "v2.0.1"
 
 public Plugin myinfo =
 {
@@ -48,6 +48,8 @@ public void OnPluginStart()
     }
 
     StoreToAddress(addr, JMP, NumberType_Int8);
+
+    CreateConVar("sm_big_motd_version", PLUGIN_VERSION, PLUGIN_DESCRIPTION, FCVAR_SPONLY | FCVAR_DONTRECORD);
 
     PrintToServer("[Big MOTD] Cracking big MOTD successfully");
 }
